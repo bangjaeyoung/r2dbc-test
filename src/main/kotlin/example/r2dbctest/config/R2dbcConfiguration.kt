@@ -1,4 +1,4 @@
-package example.r2dbctest
+package example.r2dbctest.config
 
 import io.r2dbc.h2.H2ConnectionConfiguration
 import io.r2dbc.h2.H2ConnectionFactory
