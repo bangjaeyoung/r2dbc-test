@@ -20,7 +20,6 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
-	implementation("io.r2dbc:r2dbc-h2:1.0.0.RELEASE")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
@@ -29,6 +28,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	implementation("com.github.jasync-sql:jasync-r2dbc-mysql:2.0.8")	// r2dbc mysql driver 구현체: jasync-sql
 }
 
 tasks.withType<KotlinCompile> {
